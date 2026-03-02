@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAFIS - Fake ID Detector | Project Details</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-details-content h3 {
+            font-size: 1.8rem;
+            color: var(--accent-secondary);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .project-details-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .project-details-content ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-details-content ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .project-details-content ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .tech-stack-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tech-badge {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid var(--accent-primary);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-secondary);
+            transform: translateY(-5px);
+            background: rgba(6, 182, 212, 0.05);
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--accent-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .acronym-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+
+        .acronym-list span {
+            color: var(--accent-primary);
+            font-weight: bold;
+            display: inline-block;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gradient Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" style="background: rgba(5,5,5,0.9);">
+        <div class="logo">SK<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="active"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Details Section -->
+    <section class="fade-in-section" style="margin-top: 80px;">
+        <div class="section-header">
+            <h2 class="title">TRAFIS-X <span class="highlight">Project</span></h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="glass-card project-details-content" style="max-width: 1000px; margin: 0 auto;">
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+                <div class="project-badge status-completed"
+                    style="margin-bottom: 0; font-size: 1rem; padding: 0.5rem 1rem;">Cybersecurity Project</div>
+            </div>
+
+            <div class="acronym-list">
+                <div><span>T</span> - Tracing</div>
+                <div><span>R</span> - (From TR) Tracing</div>
+                <div><span>A</span> - All</div>
+                <div><span>F</span> - Fake</div>
+                <div><span>I</span> - ID's</div>
+                <div><span>S</span> - Software</div>
+                <div><span>(X)</span> - Unhackable</div>
+            </div>
+
+            <p style="font-size: 1.25rem; color: #fff; font-weight: 300;">
+                The project is designed to detect fake social media accounts and prevent misuse of digital identities.
+            </p>
+
+            <h3>Problem Statement</h3>
+            <p>
+                In today's world, almost everyone uses mobile phones and social media platforms like Instagram and
+                Facebook. Due to this widespread usage, fake accounts are increasingly created for pranks, harassment,
+                spreading inappropriate content, fraudulent activities, and cyber crimes.
+            </p>
+            <p>Major issues highlighted:</p>
+            <ul>
+                <li>Trust issues in social media</li>
+                <li>Spreading inappropriate content</li>
+                <li>Loss of life due to cyber harassment</li>
+                <li>Cyber bullying and harassment</li>
+                <li>No proper response to user reports</li>
+            </ul>
+
+            <h3>Working Concept</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-check"></i>
+                    <h4>Basic Requirements</h4>
+                    <p>Collects legitimate details like Username, Password, Date of Birth, Gender, Mobile number, and
+                        Profile picture during account creation.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h4>IMEI Tracking</h4>
+                    <p>Records the unique IMEI number of the user's mobile device. Identifies when multiple IDs are
+                        created from the same device.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-eye"></i>
+                    <h4>Smart Surveillance</h4>
+                    <p>Accounts with multiple IDs from the same IMEI come under surveillance. Text monitoring increases
+                        only if involved in suspicious activities.</p>
+                </div>
+            </div>
+
+            <h3>Monitoring & Action System</h3>
+            <p>If an ID is involved in unwanted activities, a structured action plan is initiated:</p>
+            <ul>
+                <li><strong>⚠️ First Warning:</strong> An initial alert is sent to the user.</li>
+                <li><strong>⚠️ Second Warning:</strong> A subsequent alert if behavior continues.</li>
+                <li><strong>⚠️ Third Warning:</strong> Final warning before severe action.</li>
+                <li><strong>❌ Permanent Suspension:</strong> All IDs associated with that IMEI are permanently suspended
+                    without recovery option.</li>
+                <li><strong>📤 Legal Reporting:</strong> A report is sent to the concerned department for further legal
+                    action.</li>
+            </ul>
+
+            <h3>Target Customers</h3>
+            <p>The primary customers for this software include Instagram, Facebook, Meta, and other social media
+                companies. TRAFIS helps platforms maintain trust and improve security against fake accounts that damage
+                company reputation, increase privacy concerns, and lead to stricter government regulations and legal
+                challenges.</p>
+
+            <h3>Legal Aspects & Solutions</h3>
+            <p>
+                The project references legal consequences, such as Section 420 of IPC (India), where fraud can lead to
+                up to 7 years imprisonment. It proposes solutions like confiscating fake IDs, refusing service upon
+                suspicion, and strengthening scanning engines to detect fake IDs more accurately compared to weak 2D
+                barcode systems.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Subash K. All Rights Reserved.</p>
+            <p class="crafted-by">Crafted with <i class="fas fa-heart"></i> and code.</p>
+        </div>
+    </footer>
+
+    <!-- Simple script for fade-in animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in-section').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
