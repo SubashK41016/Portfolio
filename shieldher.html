@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShieldHer - Smart Women Safety Band | Project Details</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-details-content h3 {
+            font-size: 1.8rem;
+            color: var(--accent-secondary);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .project-details-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .project-details-content ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-details-content ul li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .project-details-content ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .tech-stack-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tech-badge {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid var(--accent-primary);
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-secondary);
+            transform: translateY(-5px);
+            background: rgba(6, 182, 212, 0.05);
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--accent-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gradient Background Elements -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" style="background: rgba(5,5,5,0.9);">
+        <div class="logo">SK<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html#projects" class="active"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Details Section -->
+    <section class="fade-in-section" style="margin-top: 80px;">
+        <div class="section-header">
+            <h2 class="title">ShieldHer <span class="highlight">Safety Band</span></h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="glass-card project-details-content" style="max-width: 1000px; margin: 0 auto;">
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+                <div class="project-badge status-completed"
+                    style="margin-bottom: 0; font-size: 1rem; padding: 0.5rem 1rem;">IoT & Mobile Project</div>
+            </div>
+
+            <p style="font-size: 1.25rem; color: #fff; font-weight: 300;">
+                An IoT-powered wearable safety device with real-time GPS tracking, instant SOS alerts, and a specialized
+                police patrol command center to ensure women's safety.
+            </p>
+
+            <h3>Technologies Used</h3>
+            <div class="tech-stack-container">
+                <span class="tech-badge"><i class="fas fa-microchip"></i> ESP32 Microcontroller</span>
+                <span class="tech-badge"><i class="fab fa-js"></i> Node.js & Express</span>
+                <span class="tech-badge"><i class="fas fa-map-marked-alt"></i> Leaflet.js</span>
+                <span class="tech-badge"><i class="fas fa-satellite-dish"></i> NEO-6M GPS & SIM800L</span>
+                <span class="tech-badge"><i class="fas fa-wave-square"></i> MPU6050 Accelerometer</span>
+                <span class="tech-badge"><i class="fab fa-google"></i> Firebase Auth</span>
+            </div>
+
+            <h3>Key Features</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h4>Instant SOS Alerts</h4>
+                    <p>A 3-second hold on the physical band or companion app button triggers an instant emergency alert,
+                        notifying contacts and the police dashboard immediately.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Real-Time GPS Tracking</h4>
+                    <p>Live location tracking backed by a robust Leaflet.js map with satellite and street map toggle
+                        functionality.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Police Command Center</h4>
+                    <p>A specialized dashboard for patrol authorities providing a live alert feed, incident mapping, and
+                        immediate respond/resolve management tools.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-fire"></i>
+                    <h4>Danger Zones & Heatmaps</h4>
+                    <p>Visual heatmaps featuring risk-level indicators based on reported incidents to identify top zones
+                        and historical risks.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-injured"></i>
+                    <h4>Fall Detection Integration</h4>
+                    <p>Built-in MPU6050 accelerometer detects potential falls and automatically triggers an SOS post a
+                        10s wait buffer, mitigating false positives.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sms"></i>
+                    <h4>GSM SMS & Offline Modes</h4>
+                    <p>Even without Wi-Fi, the integrated SIM800L module sends backup emergency SMS messages with Google
+                        Maps location data to trusted contacts.</p>
+                </div>
+            </div>
+
+            <h3>System Architecture</h3>
+            <p>ShieldHer bridges physical IoT hardware with cloud-based visualization:</p>
+            <ul>
+                <li><strong>Hardware (ESP32):</strong> Processes sensor data (pulse, GPS, accelerometer) and transmits
+                    payloads via Wi-Fi or GSM. Features haptic feedback (vibration) and buzzer alerts.</li>
+                <li><strong>Backend (Node.js):</strong> REST API managing live incidents, active contacts, Danger Zone
+                    statistics, and real-time ESP32 heartbeat pulses.</li>
+                <li><strong>Frontend Web App:</strong> A Progressive Web App (SPA shell) tailored for mobile users with
+                    easy SOS triggering, secure Firebase authentication, and interactive layers.</li>
+                <li><strong>Police Dashboard:</strong> Desktop-optimized interface for authorities that continuously
+                    polls for live updates and allows immediate dispatch assignment.</li>
+            </ul>
+
+            <br>
+            <p style="text-align: center; color: var(--text-secondary); font-size: 0.95rem;">
+                <em>"Empowering safety through instantaneous IoT connectivity and proactive rapid response
+                    mapping."</em>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Subash K. All Rights Reserved.</p>
+            <p class="crafted-by">Crafted with <i class="fas fa-heart"></i> and code.</p>
+        </div>
+    </footer>
+
+    <!-- Simple script for fade-in animation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.fade-in-section').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
