@@ -1,3 +1,12 @@
+// Vercel Web Analytics
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Analytics
+inject({
+  mode: 'auto', // Automatically detects development vs production
+  debug: false  // Set to true for debugging in development
+});
+
 // Contact Form Submission via Web3Forms
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form");
