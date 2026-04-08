@@ -1,11 +1,17 @@
 // Vercel Web Analytics
 import { inject } from '@vercel/analytics';
 
+// Vercel Speed Insights
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
 // Initialize Vercel Analytics
 inject({
   mode: 'auto', // Automatically detects development vs production
   debug: false  // Set to true for debugging in development
 });
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 // Contact Form Submission via Web3Forms
 document.addEventListener("DOMContentLoaded", () => {
