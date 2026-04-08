@@ -1,0 +1,30 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "Subash K Portfolio Website",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SubashK41016/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "Subash K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SubashK41016/Portfolio/issues"
+  },
+  "homepage": "https://github.com/SubashK41016/Portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  },
+  "devDependencies": {
+    "vite": "^8.0.7"
+  }
+}
